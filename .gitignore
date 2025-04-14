@@ -52,3 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+## ASP.NET Core secrets
+**/appsettings.Development.json
+secrets.json

@@ -1,0 +1,493 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Full\\.Net\\Projects\\Ecommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\globalexceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\globalexceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|d:\\full\\.net\\projects\\ecommerce\\presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{790398D0-2455-40EA-BD2A-F90A9282152F}|Api.Service\\Api.Service.csproj|d:\\full\\.net\\projects\\ecommerce\\api.service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790398D0-2455-40EA-BD2A-F90A9282152F}|Api.Service\\Api.Service.csproj|solutionrelative:api.service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|d:\\full\\.net\\projects\\ecommerce\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|d:\\full\\.net\\projects\\ecommerce\\api.domain\\entities\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|solutionrelative:api.domain\\entities\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|d:\\full\\.net\\projects\\ecommerce\\api.domain\\entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|solutionrelative:api.domain\\entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|d:\\full\\.net\\projects\\ecommerce\\api.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|solutionrelative:api.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB89360-3E01-4BFA-89B1-CCA6204085F3}|Api.Services.Contracts\\Api.Services.Contracts.csproj|d:\\full\\.net\\projects\\ecommerce\\api.services.contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB89360-3E01-4BFA-89B1-CCA6204085F3}|Api.Services.Contracts\\Api.Services.Contracts.csproj|solutionrelative:api.services.contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|d:\\full\\.net\\projects\\ecommerce\\api.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|solutionrelative:api.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\logs\\log-20250413.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\logs\\log-20250413.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\ecommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\ecommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Full\\.Net\\Projects\\Ultimate WebAPI\\Ultimate WebAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|d:\\full\\.net\\projects\\ecommerce\\presentation\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3735A38A-B5EC-4812-9BD3-3641AB905359}|Presentation\\Presentation.csproj|solutionrelative:presentation\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|d:\\full\\.net\\projects\\ecommerce\\shared\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|solutionrelative:shared\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|d:\\full\\.net\\projects\\ecommerce\\shared\\dtos\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|solutionrelative:shared\\dtos\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB89360-3E01-4BFA-89B1-CCA6204085F3}|Api.Services.Contracts\\Api.Services.Contracts.csproj|d:\\full\\.net\\projects\\ecommerce\\api.services.contracts\\api.services.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBB89360-3E01-4BFA-89B1-CCA6204085F3}|Api.Services.Contracts\\Api.Services.Contracts.csproj|solutionrelative:api.services.contracts\\api.services.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|d:\\full\\.net\\projects\\ecommerce\\api.domain\\entities\\configrationmodels\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C589965D-38C9-402F-98C0-6FA7E28F67CA}|API.Domain\\Api.Domain.csproj|solutionrelative:api.domain\\entities\\configrationmodels\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|d:\\full\\.net\\projects\\ecommerce\\presistence\\repositorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|solutionrelative:presistence\\repositorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|d:\\full\\.net\\projects\\ecommerce\\presistence\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|solutionrelative:presistence\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78388973-E376-4AB2-8C9F-B258C502B85E}|Mapping\\Mapping.csproj|d:\\full\\.net\\projects\\ecommerce\\mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78388973-E376-4AB2-8C9F-B258C502B85E}|Mapping\\Mapping.csproj|solutionrelative:mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|d:\\full\\.net\\projects\\ecommerce\\shared\\dtos\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BD8BEC-FAF6-41A9-9CD9-66848D4B36E4}|Shared\\Shared.csproj|solutionrelative:shared\\dtos\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|d:\\full\\.net\\projects\\ecommerce\\ecommerce\\contextfactory\\repositorycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D32D077-4F70-4F94-A76C-E321E66C7319}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\contextfactory\\repositorycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|d:\\full\\.net\\projects\\ecommerce\\presistence\\presistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F724C064-2891-444C-ACA6-70F771E106D4}|Presistence\\Presistence.csproj|solutionrelative:presistence\\presistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\ErrorDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API.Domain\\ErrorDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "API.Domain\\Entities\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "API.Domain\\Entities\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T16:11:53.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Api.Service\\AuthenticationService.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Service\\AuthenticationService.cs",
+              "RelativeToolTip": "Api.Service\\AuthenticationService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAEwDoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T16:34:08.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAASwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T21:42:37.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalExceptionHandling.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\GlobalExceptionHandling.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\GlobalExceptionHandling.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\GlobalExceptionHandling.cs",
+              "RelativeToolTip": "Ecommerce\\GlobalExceptionHandling.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:54:56.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Program.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Program.cs",
+              "RelativeToolTip": "Ecommerce\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEgAAACWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:26:51.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T21:43:26.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "Ecommerce\\appsettings.json",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\appsettings.json",
+              "RelativeToolTip": "Ecommerce\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-11T14:52:29.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Extensions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Extensions\\ServiceExtensions.cs",
+              "RelativeToolTip": "Ecommerce\\Extensions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADgv1MAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:20:29.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ecommerce.csproj",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+              "RelativeDocumentMoniker": "Ecommerce\\Ecommerce.csproj",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+              "RelativeToolTip": "Ecommerce\\Ecommerce.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-11T17:38:43.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RefreshTokenBadRequest.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "RelativeDocumentMoniker": "API.Domain\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "RelativeToolTip": "API.Domain\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAASwA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T16:10:19.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "API.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "API.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:40:51.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Services.Contracts\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Api.Services.Contracts\\IAuthenticationService.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Services.Contracts\\IAuthenticationService.cs",
+              "RelativeToolTip": "Api.Services.Contracts\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAEwAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T16:35:04.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ErrorDetails.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\ErrorDetails.cs",
+              "RelativeDocumentMoniker": "API.Domain\\ErrorDetails.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\ErrorDetails.cs",
+              "RelativeToolTip": "API.Domain\\ErrorDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:51:34.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "API.Domain\\Class1.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Class1.cs",
+              "RelativeToolTip": "API.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:02:18.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "log-20250413.json",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\logs\\log-20250413.json",
+              "RelativeDocumentMoniker": "Ecommerce\\logs\\log-20250413.json",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\logs\\log-20250413.json",
+              "RelativeToolTip": "Ecommerce\\logs\\log-20250413.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-13T15:39:46.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ecommerce.http",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Ecommerce.http",
+              "RelativeDocumentMoniker": "Ecommerce\\Ecommerce.http",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Ecommerce.http",
+              "RelativeToolTip": "Ecommerce\\Ecommerce.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-13T15:40:05.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ultimate WebAPI\\Ultimate WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Ultimate WebAPI\\Ultimate WebAPI\\Program.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ultimate WebAPI\\Ultimate WebAPI\\Program.cs",
+              "RelativeToolTip": "..\\Ultimate WebAPI\\Ultimate WebAPI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T12:51:25.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AssemblyReference.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\AssemblyReference.cs",
+              "RelativeDocumentMoniker": "Presentation\\AssemblyReference.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presentation\\AssemblyReference.cs",
+              "RelativeToolTip": "Presentation\\AssemblyReference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T21:39:46.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\TokenDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\TokenDto.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\TokenDto.cs",
+              "RelativeToolTip": "Shared\\DTOs\\TokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:40:34.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserForAuthenticationDto.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\UserForAuthenticationDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\UserForAuthenticationDto.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\UserForAuthenticationDto.cs",
+              "RelativeToolTip": "Shared\\DTOs\\UserForAuthenticationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:40:29.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Api.Services.Contracts.csproj",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Services.Contracts\\Api.Services.Contracts.csproj",
+              "RelativeDocumentMoniker": "Api.Services.Contracts\\Api.Services.Contracts.csproj",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Api.Services.Contracts\\Api.Services.Contracts.csproj",
+              "RelativeToolTip": "Api.Services.Contracts\\Api.Services.Contracts.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-11T17:39:29.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JwtConfiguration.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\ConfigrationModels\\JwtConfiguration.cs",
+              "RelativeDocumentMoniker": "API.Domain\\Entities\\ConfigrationModels\\JwtConfiguration.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\API.Domain\\Entities\\ConfigrationModels\\JwtConfiguration.cs",
+              "RelativeToolTip": "API.Domain\\Entities\\ConfigrationModels\\JwtConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:37:58.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RepositoryDbContext.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\RepositoryDbContext.cs",
+              "RelativeDocumentMoniker": "Presistence\\RepositoryDbContext.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\RepositoryDbContext.cs",
+              "RelativeToolTip": "Presistence\\RepositoryDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:49:01.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Ecommerce\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Ecommerce\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-11T19:13:32.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\Configurations\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "Presistence\\Configurations\\RoleConfiguration.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\Configurations\\RoleConfiguration.cs",
+              "RelativeToolTip": "Presistence\\Configurations\\RoleConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:22:10.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Mapping\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\UserProfile.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Mapping\\UserProfile.cs",
+              "RelativeToolTip": "Mapping\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T18:47:00.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserForRegistrationDto.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\UserForRegistrationDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\UserForRegistrationDto.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Shared\\DTOs\\UserForRegistrationDto.cs",
+              "RelativeToolTip": "Shared\\DTOs\\UserForRegistrationDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:31:46.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RepositoryContextFactory.cs",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\ContextFactory\\RepositoryContextFactory.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\ContextFactory\\RepositoryContextFactory.cs",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Ecommerce\\ContextFactory\\RepositoryContextFactory.cs",
+              "RelativeToolTip": "Ecommerce\\ContextFactory\\RepositoryContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:13:22.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Presistence.csproj",
+              "DocumentMoniker": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\Presistence.csproj",
+              "RelativeDocumentMoniker": "Presistence\\Presistence.csproj",
+              "ToolTip": "D:\\Full\\.Net\\Projects\\Ecommerce\\Presistence\\Presistence.csproj",
+              "RelativeToolTip": "Presistence\\Presistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-11T14:56:20.313Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
