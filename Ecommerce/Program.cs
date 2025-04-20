@@ -1,7 +1,11 @@
+using Api.Domain.Repositories;
+using Api.Service;
+using Api.Services.Contracts;
 using Ecommerce.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
+using Presistence.Repositories;
 using Serilog;
 using Serilog.Events;
 
@@ -37,13 +41,19 @@ namespace Ecommerce
 
             builder.Services.ConfigureSqlContext(builder.Configuration);
             builder.Services.ConfigureAuthenticationService();
+            builder.Services.ConfigureUserService();
+            builder.Services.ConfigureProductService();
 
-           
+
+
             builder.Services.AddAuthentication();
             builder.Services.ConfigureIdentity();
             builder.Services.ConfigureJWT(builder.Configuration);
             builder.Services.AddJwtConfiguration(builder.Configuration);
 
+            
+            builder.Services.ConfigureUnitOfWork();
+           
             builder.Services.AddAutoMapper(typeof(Mapping.UserProfile));
 
             builder.Services.AddControllers(config =>

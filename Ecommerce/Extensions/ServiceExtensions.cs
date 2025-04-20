@@ -8,6 +8,8 @@ using Api.Domain.Entities.ConfigrationModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Api.Domain.Repositories;
+using Presistence.Repositories;
 
 namespace Ecommerce.Extensions
 {
@@ -82,5 +84,22 @@ namespace Ecommerce.Extensions
 
         public static void AddGlobalExceptionHandler(this IServiceCollection services)
             => services.AddExceptionHandler<GlobalExceptionHandler>();
+
+        //public static void AddRepositories(this IServiceCollection services)
+        //{
+        //    services.AddScoped<IUserRepository, UserRepository>();
+        //    services.AddScoped<IProductRepository, ProductRepository>();
+        //}
+        public static void ConfigureUnitOfWork(this IServiceCollection services)
+            => services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+        public static void ConfigureUserService(this IServiceCollection services)
+            => services.AddScoped<IUserService, UserService>();
+        public static void ConfigureProductService(this IServiceCollection services)
+            => services.AddScoped<IProductService, ProductService>();
+
+
+
     }
 }
+

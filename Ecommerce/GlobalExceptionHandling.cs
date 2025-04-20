@@ -19,6 +19,7 @@ namespace Ecommerce
             httpContext.Response.ContentType = "application/json";
 
             _logger.LogError($"Something went wrong:");
+            _logger.LogError(exception.ToString());
 
             //var message = exception switch
             //{

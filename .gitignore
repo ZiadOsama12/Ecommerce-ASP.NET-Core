@@ -56,3 +56,11 @@ nunit-*.xml
 ## ASP.NET Core secrets
 **/appsettings.Development.json
 secrets.json
+
+
+.vs/
+*.user
+*.suo
+*.vsidx
+*.v2
+
