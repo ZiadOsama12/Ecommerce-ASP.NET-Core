@@ -28,8 +28,16 @@ namespace Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> GetUserById(string id)
         {
-            var user = await userService.GetByIdAsync(id);
+            var user = await userService.GetUserByIdAsync(id, trackChanges: false);
             return Ok(user);
+        }
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await userService.GetAllUsersAsync(trackChanges: false);
+
+            return Ok(users);
         }
     }
 }

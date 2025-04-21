@@ -16,10 +16,33 @@ namespace Presistence.Repositories
         public ProductRepository(RepositoryDbContext repositoryContext) : base(repositoryContext) 
             { }
 
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges)
+        {
+            var products = await FindAll(trackChanges).ToListAsync();
+            return products;
+        }
+        public void DeleteProduct(Product product) => Delete(product);
+
+
+        public Task<IEnumerable<Product>> GetFeaturedProductsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<Product> GetProductByIdAsync(int id, bool trackChanges)
         {
             var product = await FindByCondition(p => p.PId == id, false).SingleOrDefaultAsync();
             return product;
+        }
+
+        public Task<IEnumerable<Product>> GetProductsByCategoryAsync(Guid categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Product>> SearchProductsAsync(string keyword)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Presistence.Configurations
             entity.ToTable("Product");
 
             entity.Property(e => e.PId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd() // Never insert the p_id
                 .HasColumnName("p_id");
 
             entity.Property(e => e.CId).HasColumnName("c_id");

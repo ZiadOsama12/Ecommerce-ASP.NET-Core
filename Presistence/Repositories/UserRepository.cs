@@ -21,12 +21,12 @@ namespace Presistence.Repositories
 
         public void CreateUser(User user)
         {
-            throw new NotImplementedException();
+            Create(user);
         }
 
         public void DeleteUser(User user)
         {
-            throw new NotImplementedException();
+            Delete(user);
         }
 
         public async Task<List<User>> GetAllUsersAsync(bool trackChanges)
@@ -34,7 +34,7 @@ namespace Presistence.Repositories
             return await FindAll(trackChanges).ToListAsync();
         }
 
-        public async Task<User> GetUserAsync(string id, bool trackChanges)
+        public async Task<User> GetUserByIdAsync(string id, bool trackChanges)
         {
             Console.WriteLine(id);
             return await FindByCondition(u => u.Id == id, trackChanges).SingleOrDefaultAsync();

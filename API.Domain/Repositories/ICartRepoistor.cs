@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Api.Domain.Repositories
 {
-    public interface IUnitOfWork : IDisposable
+    public interface ICartRepoistory
     {
-        IUserRepository User { get; }
-        IProductRepository Product { get; }
-        Task<int> CompleteAsync();
+
     }
 }

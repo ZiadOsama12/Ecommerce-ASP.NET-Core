@@ -1,8 +1,8 @@
-﻿using Api.Domain.Entities;
+﻿using Presistence;
 using System;
 using System.Collections.Generic;
 
-namespace Presistence;
+namespace Api.Domain.Entities;
 
 public partial class Order
 {

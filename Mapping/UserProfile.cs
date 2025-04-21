@@ -8,6 +8,7 @@ namespace Mapping
     {
         public UserProfile() {
             CreateMap<UserForRegistrationDto, User>();
+            CreateMap<GetUserDto, User>().ReverseMap();
 
         }
     }

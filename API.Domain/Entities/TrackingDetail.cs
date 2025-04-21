@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace Presistence;

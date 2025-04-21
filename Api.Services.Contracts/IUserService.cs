@@ -1,4 +1,5 @@
 ﻿using Api.Domain.Entities;
+using Shared.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Api.Services.Contracts
 {
     public interface IUserService
     {
-        public Task<User> GetByIdAsync(string id);
+        public Task<GetUserDto> GetUserByIdAsync(string id, bool trackChanges);
+        public Task<List<GetUserDto>> GetAllUsersAsync(bool trackChanges);
     }
 }
