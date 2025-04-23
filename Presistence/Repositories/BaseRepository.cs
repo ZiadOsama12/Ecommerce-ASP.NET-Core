@@ -27,5 +27,10 @@ namespace Api.Domain.Repositories
         public void Create(T entity) => RepositoryDbContext.Set<T>().Add(entity);
         public void Update(T entity) => RepositoryDbContext.Set<T>().Update(entity); // for disconnected update "Another Context"
         public void Delete(T entity) => RepositoryDbContext.Set<T>().Remove(entity);
+
+        public Task<int> DeleteByCondition(Expression<Func<T, bool>> expression) // is AsNoTracking necessary ????
+            => RepositoryDbContext.Set<T>().Where(expression).AsNoTracking().ExecuteDeleteAsync();
+        
+
     }
 }

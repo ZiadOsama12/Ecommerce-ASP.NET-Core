@@ -1,6 +1,9 @@
 ﻿using Presistence;
 using System;
 using System.Collections.Generic;
+using Newtonsoft;
+using Newtonsoft.Json;
+
 
 namespace Api.Domain.Entities;
 
@@ -21,4 +24,7 @@ public partial class Product
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
     public virtual ICollection<Order> OrderNos { get; set; } = new List<Order>();
+    [JsonIgnore]
+    public virtual ICollection<CartProduct> CartProducts { get; set; } = new List<CartProduct>();
+
 }

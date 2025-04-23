@@ -15,5 +15,6 @@ namespace Api.Domain.Repositories
         void Create(T entity);
         void Update(T entity);
         void Delete(T entity);
+        Task<int> DeleteByCondition(Expression<Func<T, bool>> expression); // trying to solve the N+1 Delete.
     }
 }

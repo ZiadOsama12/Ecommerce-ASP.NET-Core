@@ -98,7 +98,8 @@ namespace Ecommerce.Extensions
         public static void ConfigureProductService(this IServiceCollection services)
             => services.AddScoped<IProductService, ProductService>();
 
-
+        public static void ConfigureCartService(this IServiceCollection services)
+           => services.AddScoped<ICartService, CartService>();
 
     }
 }

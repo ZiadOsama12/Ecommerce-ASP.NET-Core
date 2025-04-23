@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Shared.DTOs;
 
-namespace Ecommerce.Controllers
+namespace Presentation.Controllers
 {
     [Route("api/products")]
     [ApiController]

@@ -1,6 +1,5 @@
 ﻿using Api.Domain.Entities.Exceptions;
 using Api.Services.Contracts;
-using Ecommerce.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

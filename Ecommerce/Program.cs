@@ -43,6 +43,7 @@ namespace Ecommerce
             builder.Services.ConfigureAuthenticationService();
             builder.Services.ConfigureUserService();
             builder.Services.ConfigureProductService();
+            builder.Services.ConfigureCartService();
 
 
 
@@ -65,7 +66,9 @@ namespace Ecommerce
                 {
                     Duration = 120
                 });
-            }).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters()
+            }).AddNewtonsoftJson(
+                      options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+            .AddXmlDataContractSerializerFormatters()
             //.AddCustomCSVFormatter()
             .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 

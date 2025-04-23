@@ -15,11 +15,14 @@ namespace Presistence.Repositories
 
         public IProductRepository Product { get; private set; }
 
+        public ICartRepository Cart { get; private set; }
+
         public UnitOfWork(RepositoryDbContext repositoryDbContext)
         {
             this.repositoryDbContext = repositoryDbContext;
             User = new UserRepository(repositoryDbContext);
             Product = new ProductRepository(repositoryDbContext);
+            Cart = new CartRepository(repositoryDbContext);
 
         }
 

@@ -35,9 +35,11 @@ namespace Presistence.Repositories
             return product;
         }
 
-        public Task<IEnumerable<Product>> GetProductsByCategoryAsync(Guid categoryId)
+        public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId)
         {
-            throw new NotImplementedException();
+            var products = await FindByCondition(p => p.CId == categoryId, false).ToListAsync();
+
+            return products;
         }
 
         public Task<IEnumerable<Product>> SearchProductsAsync(string keyword)

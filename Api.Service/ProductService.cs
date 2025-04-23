@@ -59,6 +59,14 @@ namespace Api.Service
             return productDto;
         }
 
+        public async Task<IEnumerable<ProductDto>> GetProductsByCategoryId(int id, bool trackChanges)
+        {
+            var products = await unitOfWork.Product.GetProductsByCategoryAsync(id);
+            var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
+            
+            return productsDto;
+        }
+
         public async Task UpdateProduct(ProductDto productDto)
         {
             var product = mapper.Map<Product>(productDto);

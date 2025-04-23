@@ -1,5 +1,4 @@
 ﻿using Api.Domain.Entities;
-using Presistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +9,13 @@ namespace Api.Domain.Repositories
 {
     public interface ICartRepository
     {
-        Task<Cart> GetCartByUserIdAsync(Guid userId);
-        Task AddItemToCartAsync(Guid cartId, Product product, int quantity);
-        Task ClearCartAsync(Guid cartId);
+        Task<Cart> GetCartByUserIdAsync(string userId, bool trackChanges);
+        Task<CartProduct> GetCartProductByCartIdAndProductId(int cartId, int productId, bool trackChanges);
+
+        void CreateCartProduct(CartProduct cartProduct);
+        //Task AddItemToCartAsync(int cartId, Product product, int quantity, bool trackChanges);
+        Task<int> ClearCartAsync(int cartId);
+
+        void Delete(CartProduct cartProduct); // Will execute the implementation of the RepoBase
     }
 }

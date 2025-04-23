@@ -14,6 +14,9 @@ namespace Api.Services.Contracts
         public Task UpdateProduct(ProductDto productDto);
         public Task<ProductDto> GetByIdAsync(int id, bool trackChanges);
         public Task<IEnumerable<ProductDto>> GetAllProductsAsync(bool trackChanges);
+
+        public Task<IEnumerable<ProductDto>> GetProductsByCategoryId(int id, bool trackChanges);
+
         public Task DeleteProduct(int id);
 
     }

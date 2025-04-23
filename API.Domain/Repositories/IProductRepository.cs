@@ -11,7 +11,7 @@ namespace Api.Domain.Repositories
     {
         Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
         Task<Product> GetProductByIdAsync(int id, bool trackChanges);
-        Task<IEnumerable<Product>> GetProductsByCategoryAsync(Guid categoryId);
+        Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId);
         Task<IEnumerable<Product>> SearchProductsAsync(string keyword);
         Task<IEnumerable<Product>> GetFeaturedProductsAsync();
         void Create(Product entity);
