@@ -9,9 +9,12 @@ namespace Api.Domain.Repositories
 {
     public interface IOrderRepository
     {
-        Task<IEnumerable<Order>> GetOrdersByUserAsync(string userId);
-        Task<Order> GetOrderWithTrackingDetailsAsync(int orderId);
-        Task<IEnumerable<Order>> GetOrdersInDateRangeAsync(DateTime start, DateTime end);
+        Task<IEnumerable<Order>> GetOrdersByUserAsync(string userId, bool trackChanges);
+        Task<Order> GetOrderWithDetailsAsync(int orderId, bool trackChanges);
+        Task<Order> GetOrderByOrderId(int orderId, bool trackChanges);
+
+        Task<IEnumerable<Order>> GetOrdersInDateRangeAsync(DateTime start, DateTime end, bool trackChanges);
+        void CreateOrder(Order order);
 
     }
 }

@@ -41,5 +41,13 @@ namespace Presistence.Repositories
         {
             Create(cartProduct);
         }
+
+        public async Task<List<CartProduct>> GetCartProductWithProductByCartId(int cartId, bool trackChanges)
+        {
+            var cart = await FindByCondition(c => c.CartId == cartId, trackChanges)
+                .Include(c => c.Product)
+                .ToListAsync();
+            return cart;
+        }
     }
 }

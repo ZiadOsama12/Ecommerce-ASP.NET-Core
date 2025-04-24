@@ -31,7 +31,7 @@ public partial class RepositoryDbContext : IdentityDbContext<User>
 
     public virtual DbSet<Review> Reviews { get; set; }
 
-    public virtual DbSet<TrackingDetail> TrackingDetails { get; set; }
+    //public virtual DbSet<TrackingDetail> TrackingDetails { get; set; }
 
     //public virtual DbSet<User>
     
@@ -46,7 +46,8 @@ public partial class RepositoryDbContext : IdentityDbContext<User>
         modelBuilder.ApplyConfiguration(new OrderConfiguration());
         modelBuilder.ApplyConfiguration(new PaymentConfiguration());
         modelBuilder.ApplyConfiguration(new ProductConfiguration());
-        modelBuilder.ApplyConfiguration(new TrackingDetailConfiguration());
+     
+        //modelBuilder.ApplyConfiguration(new TrackingDetailConfiguration());
         modelBuilder.ApplyConfiguration(new ReviewConfiguration());
         
 

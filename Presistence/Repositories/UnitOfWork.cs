@@ -1,4 +1,5 @@
-﻿using Api.Domain.Repositories;
+﻿using Api.Domain.Entities;
+using Api.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,12 @@ namespace Presistence.Repositories
     {
         private readonly RepositoryDbContext repositoryDbContext;
         public IUserRepository User{ get; private set; }
-
         public IProductRepository Product { get; private set; }
 
         public ICartRepository Cart { get; private set; }
+        public IOrderRepository Order { get; private set; }
+        
+        public IOrderProductRepository OrderProducts { get; private set; }
 
         public UnitOfWork(RepositoryDbContext repositoryDbContext)
         {
@@ -23,7 +26,8 @@ namespace Presistence.Repositories
             User = new UserRepository(repositoryDbContext);
             Product = new ProductRepository(repositoryDbContext);
             Cart = new CartRepository(repositoryDbContext);
-
+            Order = new OrderRepository(repositoryDbContext);
+            OrderProducts = new OrderProductRepository(repositoryDbContext);
         }
 
 

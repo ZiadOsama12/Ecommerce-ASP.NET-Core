@@ -12,7 +12,7 @@ namespace Api.Domain.Repositories
         IProductRepository Product { get; }
         ICartRepository Cart { get; }
 
-
+        IOrderRepository Order { get; }
         Task<int> CompleteAsync();
     }
 }

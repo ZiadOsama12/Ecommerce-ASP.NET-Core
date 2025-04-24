@@ -12,6 +12,7 @@ namespace Api.Domain.Repositories
         Task<Cart> GetCartByUserIdAsync(string userId, bool trackChanges);
         Task<CartProduct> GetCartProductByCartIdAndProductId(int cartId, int productId, bool trackChanges);
 
+        Task<List<CartProduct>>GetCartProductWithProductByCartId(int cartId, bool trackChanges);
         void CreateCartProduct(CartProduct cartProduct);
         //Task AddItemToCartAsync(int cartId, Product product, int quantity, bool trackChanges);
         Task<int> ClearCartAsync(int cartId);

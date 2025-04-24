@@ -1,16 +1,15 @@
-﻿using Api.Domain.Entities;
-using System;
-using System.Collections.Generic;
+﻿//using System;
+//using System.Collections.Generic;
 
-namespace Presistence;
+//namespace Api.Domain.Entities;
 
-public partial class TrackingDetail
-{
-    public int TId { get; set; }
+//public partial class TrackingDetail
+//{
+//    public int TId { get; set; }
 
-    public string? Status { get; set; }
+//    public string? Status { get; set; }
 
-    public int? OrderNo { get; set; }
+//    public int? OrderNo { get; set; }
 
-    public virtual Order? OrderNoNavigation { get; set; }
-}
+//    public virtual Order? OrderNoNavigation { get; set; }
+//}

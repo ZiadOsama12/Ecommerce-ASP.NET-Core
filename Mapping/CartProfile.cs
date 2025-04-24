@@ -23,7 +23,7 @@ namespace Mapping
             CreateMap<CartProduct, CartProductDto>() // == "whenever you find CartProduct => CartProductDto....do that..So it will be use for the previous mappping
                 .ForMember(dest => dest.ProductId, opt => opt.MapFrom(src => src.ProductId))
                 .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
-                .ReverseMap(); // will do same operations because of the equal names
+                .ReverseMap(); // will do same operations because of the equal names....// will be used when "mapper.map<Cart, GetCartDto>(someCartObject)"
 
             CreateMap<CartProduct, AddItemDto>()
                 .ReverseMap();

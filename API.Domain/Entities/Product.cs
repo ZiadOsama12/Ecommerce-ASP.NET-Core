@@ -23,7 +23,9 @@ public partial class Product
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
-    public virtual ICollection<Order> OrderNos { get; set; } = new List<Order>();
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+    public virtual ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();
+
     [JsonIgnore]
     public virtual ICollection<CartProduct> CartProducts { get; set; } = new List<CartProduct>();
 
