@@ -11,8 +11,9 @@ namespace Api.Domain.Repositories
         IUserRepository User { get; }
         IProductRepository Product { get; }
         ICartRepository Cart { get; }
-
         IOrderRepository Order { get; }
+
+        IReviewRepository Review { get; }
         Task<int> CompleteAsync();
     }
 }

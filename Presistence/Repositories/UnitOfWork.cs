@@ -14,12 +14,10 @@ namespace Presistence.Repositories
         private readonly RepositoryDbContext repositoryDbContext;
         public IUserRepository User{ get; private set; }
         public IProductRepository Product { get; private set; }
-
         public ICartRepository Cart { get; private set; }
         public IOrderRepository Order { get; private set; }
-        
         public IOrderProductRepository OrderProducts { get; private set; }
-
+        public IReviewRepository Review { get; private set; }
         public UnitOfWork(RepositoryDbContext repositoryDbContext)
         {
             this.repositoryDbContext = repositoryDbContext;
@@ -28,6 +26,7 @@ namespace Presistence.Repositories
             Cart = new CartRepository(repositoryDbContext);
             Order = new OrderRepository(repositoryDbContext);
             OrderProducts = new OrderProductRepository(repositoryDbContext);
+            Review = new ReviewRepository(repositoryDbContext);
         }
 
 

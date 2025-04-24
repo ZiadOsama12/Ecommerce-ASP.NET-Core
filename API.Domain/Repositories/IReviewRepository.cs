@@ -1,4 +1,4 @@
-﻿using Presistence;
+﻿using Api.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +9,12 @@ namespace Api.Domain.Repositories
 {
     public interface IReviewRepository
     {
-        Task<IEnumerable<Review>> GetReviewsForProductAsync(Guid productId);
-        Task<IEnumerable<Review>> GetPendingReviewsAsync(); // if there's moderation
+        Task<IEnumerable<Review>> GetReviewsForProductAsync(int productId, bool trackChanges);
+        Task<double> GetAverageRatingAsync(int productId, bool trackChanges);
 
+        Task<Review> GetReviewByReviewId(int reviewId, bool trackChanges);
+        void AddReview(Review review);
+        void RemoveReview(Review review);
+        void UpdateReview(Review review);
     }
 }

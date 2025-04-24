@@ -45,6 +45,7 @@ namespace Ecommerce
             builder.Services.ConfigureProductService();
             builder.Services.ConfigureCartService();
             builder.Services.ConfigureOrderService();
+            builder.Services.ConfigureReviewService();
 
 
 

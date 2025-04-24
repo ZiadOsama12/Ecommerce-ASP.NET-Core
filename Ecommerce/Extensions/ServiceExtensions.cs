@@ -102,6 +102,8 @@ namespace Ecommerce.Extensions
            => services.AddScoped<ICartService, CartService>();
         public static void ConfigureOrderService(this IServiceCollection services)
           => services.AddScoped<IOrderService, OrderService>();
+        public static void ConfigureReviewService(this IServiceCollection services)
+          => services.AddScoped<IReviewService, ReviewService>();
 
     }
 }
