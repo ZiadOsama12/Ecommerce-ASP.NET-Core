@@ -1,7 +1,10 @@
 using Api.Domain.Repositories;
 using Api.Service;
 using Api.Services.Contracts;
+using AspNetCoreRateLimit;
+using Azure.Core;
 using Ecommerce.Extensions;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
@@ -39,6 +42,7 @@ namespace Ecommerce
             .ReadFrom.Services(services));
 
 
+
             builder.Services.ConfigureSqlContext(builder.Configuration);
             builder.Services.ConfigureAuthenticationService();
             builder.Services.ConfigureUserService();
@@ -47,7 +51,9 @@ namespace Ecommerce
             builder.Services.ConfigureOrderService();
             builder.Services.ConfigureReviewService();
 
-
+            builder.Services.AddMemoryCache(); // This group for caching
+            builder.Services.ConfigureRateLimitingOptions();
+            builder.Services.AddHttpContextAccessor();
 
             builder.Services.AddAuthentication();
             builder.Services.ConfigureIdentity();
@@ -91,6 +97,15 @@ namespace Ecommerce
             
 
             app.UseHttpsRedirection(); // will log the request too
+
+            //app.UseStaticFiles();
+            app.UseForwardedHeaders(new ForwardedHeadersOptions //  will forward proxy headers to the current request.
+            {
+                ForwardedHeaders = ForwardedHeaders.All
+            });
+
+            app.UseIpRateLimiting();
+            app.UseCors("CorsPolicy");
 
             app.UseAuthentication();
             app.UseAuthorization();

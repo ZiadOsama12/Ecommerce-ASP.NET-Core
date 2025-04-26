@@ -10,12 +10,22 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Api.Domain.Repositories;
 using Presistence.Repositories;
+using AspNetCoreRateLimit;
 
 namespace Ecommerce.Extensions
 {
     public static class ServiceExtensions
     {
+        public static void ConfigureCors(this IServiceCollection services) =>
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                    builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+                    //.WithExposedHeaders("X-Pagination"));
 
+    });
         public static void ConfigureAuthenticationService(this IServiceCollection services)
             => services.AddScoped<IAuthenticationService, AuthenticationService>();
 
@@ -104,6 +114,25 @@ namespace Ecommerce.Extensions
           => services.AddScoped<IOrderService, OrderService>();
         public static void ConfigureReviewService(this IServiceCollection services)
           => services.AddScoped<IReviewService, ReviewService>();
+        public static void ConfigureRateLimitingOptions(this IServiceCollection services)
+        {
+            var rateLimitRules = new List<RateLimitRule>
+            {
+                new RateLimitRule
+                {
+                    Endpoint = "*",
+                    Limit = 1000,
+                    Period = "5m"
+                }
+            };
+            services.Configure<IpRateLimitOptions>(opt => {
+                opt.GeneralRules = rateLimitRules;
+            });
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+        }
 
     }
 }
