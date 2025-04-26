@@ -22,6 +22,13 @@ namespace Presentation.Controllers
             _logger = logger;
             this.userService = userService;
         }
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS");
+            return Ok();
+        }
+
 
         [HttpGet("{id}")]
         [Authorize]

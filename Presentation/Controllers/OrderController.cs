@@ -22,6 +22,14 @@ namespace Presentation.Controllers
             _logger = logger;
             this.orderService = orderService;
         }
+
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST");
+            return Ok();
+        }
+
         [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetOrderByUserId()

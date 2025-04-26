@@ -27,6 +27,13 @@ namespace Presentation.Controllers
             this.productService = productService;
         }
 
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, PATCH, DELETE");
+            return Ok();
+        }
+
         [HttpGet("{id}")]
         [Authorize]
         public async Task<IActionResult> GetProductById(int id)

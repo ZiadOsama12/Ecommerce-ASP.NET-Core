@@ -24,6 +24,12 @@ namespace Presentation.Controllers
             this.cartService = cartService;
         }
 
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, DELETE");
+            return Ok();
+        }
 
         [HttpGet]
         [Authorize]

@@ -17,6 +17,12 @@ namespace Ecommerce.Controllers
             this.authenticationService = authenticationService;
             _logger = logger;
         }
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, POST");
+            return Ok();
+        }
 
         [HttpPost("register")]
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistrationDto)

@@ -24,7 +24,12 @@ namespace Presentation.Controllers
             _logger = logger;
             this.reviewService = reviewService;
         }
-
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, DELETE");
+            return Ok();
+        }
         [HttpGet("products/{productId}")]
         [Authorize]
         public async Task<IActionResult> GetReviewsForProductAsync(int productId) // can
