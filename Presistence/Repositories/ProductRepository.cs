@@ -1,6 +1,9 @@
 ﻿using Api.Domain.Entities;
 using Api.Domain.Repositories;
+using Azure;
 using Microsoft.EntityFrameworkCore;
+using Presistence.Repositories.Extensions;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +19,21 @@ namespace Presistence.Repositories
         public ProductRepository(RepositoryDbContext repositoryContext) : base(repositoryContext) 
             { }
 
-        public async Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges)
+        public async Task<PagedList<Product>> GetAllProductsAsync(ProductParameters productParameters, bool trackChanges)
         {
-            var products = await FindAll(trackChanges).ToListAsync();
-            return products;
+            var products = FindAll(trackChanges)
+                .FilterProductss(productParameters.MinPrice, productParameters.MaxPrice)
+            //.Search(employeeParameters.SearchTerm) // Note the position of the Search is important
+            .OrderBy(e => e.Name)
+            //.Skip((productParameters.PageNumber - 1) * productParameters.PageSize)
+            //.Take(productParameters.PageSize)
+            .Search(productParameters.SearchTerm) // Note the position of the Search is important
+            .Sort(productParameters.OrderBy);
+            
+            
+            var pagedProducts = await PagedList<Product>.ToPagedListAsync(products, productParameters.PageNumber ,productParameters.PageSize);
+                //.ToListAsync();
+            return pagedProducts;
         }
         public void DeleteProduct(Product product) => Delete(product);
 
@@ -31,15 +45,18 @@ namespace Presistence.Repositories
 
         public async Task<Product> GetProductByIdAsync(int id, bool trackChanges)
         {
-            var product = await FindByCondition(p => p.PId == id, false).SingleOrDefaultAsync();
+            var product = await FindByCondition(p => p.PId == id, trackChanges).SingleOrDefaultAsync();
             return product;
         }
 
-        public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId)
+        public async Task<PagedList<Product>> GetProductsByCategoryAsync(ProductParameters productParameters, int categoryId)
         {
-            var products = await FindByCondition(p => p.CId == categoryId, false).ToListAsync();
+            var products = FindByCondition(p => p.CId == categoryId, false);
 
-            return products;
+            var pagedProducts = await PagedList<Product>.ToPagedListAsync(products, productParameters.PageNumber, productParameters.PageSize);
+            //.ToListAsync();
+            return pagedProducts;
+
         }
 
         public Task<IEnumerable<Product>> SearchProductsAsync(string keyword)

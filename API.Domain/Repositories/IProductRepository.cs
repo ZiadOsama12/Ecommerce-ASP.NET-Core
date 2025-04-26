@@ -1,4 +1,5 @@
 ﻿using Api.Domain.Entities;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace Api.Domain.Repositories
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
+        Task<PagedList<Product>> GetAllProductsAsync(ProductParameters productParameteres, bool trackChanges);
         Task<Product> GetProductByIdAsync(int id, bool trackChanges);
-        Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId);
+        Task<PagedList<Product>> GetProductsByCategoryAsync(ProductParameters productParameters, int categoryId);
         Task<IEnumerable<Product>> SearchProductsAsync(string keyword);
         Task<IEnumerable<Product>> GetFeaturedProductsAsync();
         void Create(Product entity);

@@ -1,8 +1,10 @@
 ﻿using Api.Domain.Entities;
 using Api.Domain.Repositories;
+using Api.Domain.Responses;
 using Api.Services.Contracts;
 using AutoMapper;
 using Shared.DTOs;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,27 +46,44 @@ namespace Api.Service
             return;
         }
 
-        public async Task<IEnumerable<ProductDto>> GetAllProductsAsync(bool trackChanges)
+        public async Task<(ApiBaseResponse response, MetaData metaData)> GetAllProductsAsync(ProductParameters productParameters, bool trackChanges)
         {
-            var products = await unitOfWork.Product.GetAllProductsAsync(trackChanges);
+            var products = await unitOfWork.Product.GetAllProductsAsync(productParameters ,trackChanges);
             var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
-            return productsDto;
+            return (new ApiOkResponse<IEnumerable<ProductDto>>(productsDto), products.MetaData);
 
         }
 
-        public async Task<ProductDto> GetByIdAsync(int id, bool trackChanges)
+        public async Task<ApiBaseResponse> GetByIdAsync(int id, bool trackChanges)
         {
             var product = await unitOfWork.Product.GetProductByIdAsync(id, trackChanges);
             var productDto = mapper.Map<ProductDto>(product);
-            return productDto;
+            return new ApiOkResponse<ProductDto>(productDto);
         }
 
-        public async Task<IEnumerable<ProductDto>> GetProductsByCategoryId(int id, bool trackChanges)
+        
+
+        public async Task<(ApiBaseResponse response, MetaData metaData)> GetProductsByCategoryId(int id, ProductParameters productParameters,
+            bool trackChanges)
         {
-            var products = await unitOfWork.Product.GetProductsByCategoryAsync(id);
+            var products = await unitOfWork.Product.GetProductsByCategoryAsync(productParameters ,id);
             var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
             
-            return productsDto;
+            return (new ApiOkResponse<IEnumerable<ProductDto>>(productsDto), products.MetaData);
+        }
+
+        public async Task<(ProductDto productToPatch, Product product)> GetProductByIdToPatchAsync(int id, bool trackChanges)
+        {
+            var product = await unitOfWork.Product.GetProductByIdAsync(id, trackChanges);
+            var productDto = mapper.Map<ProductDto>(product);
+            await unitOfWork.CompleteAsync();
+
+            return (productDto, product);
+        }
+        public async Task SaveChangesForPatch(ProductDto productToPatch, Product productEntity)
+        {
+            mapper.Map(productToPatch, productEntity);
+            var result = await unitOfWork.CompleteAsync();
         }
 
         public async Task UpdateProduct(ProductDto productDto)
