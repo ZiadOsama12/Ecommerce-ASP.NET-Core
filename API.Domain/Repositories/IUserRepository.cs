@@ -11,6 +11,8 @@ namespace Api.Domain.Repositories
     {
         Task<List<User>> GetAllUsersAsync(bool trackChanges);
         Task<User> GetUserByIdAsync(string id, bool trackChanges);
+
+        Task<bool> IsEmailUniqueAsync(string email);
         void CreateUser(User user);
         void DeleteUser(User user);
     }

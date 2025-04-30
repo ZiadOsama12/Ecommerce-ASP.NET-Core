@@ -14,6 +14,10 @@ namespace Ecommerce
             _logger = logger;
         }
 
+        //To use your exception handler for fluent validation,
+        // you need to make FluentValidation throw an exception.
+
+
         public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
         {
             httpContext.Response.ContentType = "application/json";

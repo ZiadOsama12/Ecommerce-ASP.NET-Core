@@ -39,5 +39,10 @@ namespace Presistence.Repositories
             Console.WriteLine(id);
             return await FindByCondition(u => u.Id == id, trackChanges).SingleOrDefaultAsync();
         }
+
+        public async Task<bool> IsEmailUniqueAsync(string email)
+        {
+            return  !await RepositoryDbContext.Users.AnyAsync(u => u.Email == email);
+        }
     }
 }

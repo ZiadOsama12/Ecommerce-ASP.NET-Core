@@ -11,6 +11,10 @@ using System.Text;
 using Api.Domain.Repositories;
 using Presistence.Repositories;
 using AspNetCoreRateLimit;
+using FluentValidation;
+using Shared.DTOs;
+using Validation;
+using FluentValidation.AspNetCore;
 
 namespace Ecommerce.Extensions
 {
@@ -133,7 +137,16 @@ namespace Ecommerce.Extensions
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
             services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
         }
+        public static void ConfigureFluentValidation(this IServiceCollection services)
+        {
+            //services.AddScoped<IValidator<UserForAuthenticationDto>, LoginValidator>();
+            //services.AddScoped<IValidator<UserForRegistrationDto>, RegisterValidator>();
+            
+            //services.AddFluentValidation(); // deprecated
+            services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+            services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
 
+        }
     }
 }
 

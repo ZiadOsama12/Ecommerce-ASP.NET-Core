@@ -1,6 +1,9 @@
 ﻿using Api.Services.Contracts;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Logging;
 using Shared.DTOs;
 
@@ -42,8 +45,25 @@ namespace Ecommerce.Controllers
             return StatusCode(201);
         }
         [HttpPost("login")]
-        public async Task<IActionResult> Authenticate([FromBody] UserForAuthenticationDto user)
+        public async Task<IActionResult> Authenticate(
+            [FromBody] UserForAuthenticationDto user
+            //[FromServices] IValidator<UserForAuthenticationDto> validator
+            )
         {
+            //ValidationResult validationResult = validator.Validate(user);
+            //if (!validationResult.IsValid)
+            //{
+            //    var modelStateDictionary = new ModelStateDictionary();
+            //    foreach (var error in validationResult.Errors)
+            //    {
+            //        modelStateDictionary.AddModelError(
+            //            error.PropertyName,
+            //            error.ErrorMessage
+            //        );
+            //    }
+            //    return ValidationProblem(modelStateDictionary);
+            //}
+
             if (!await authenticationService.ValidateUser(user))
                 return Unauthorized();
             var tokenDto = await authenticationService.CreateToken(populateExp: true);

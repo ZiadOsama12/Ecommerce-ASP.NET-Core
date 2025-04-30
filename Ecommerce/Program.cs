@@ -65,6 +65,9 @@ namespace Ecommerce
            
             builder.Services.AddAutoMapper(typeof(Mapping.UserProfile));
 
+            builder.Services.ConfigureFluentValidation();
+
+
             builder.Services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
