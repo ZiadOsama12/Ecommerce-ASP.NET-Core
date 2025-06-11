@@ -64,9 +64,6 @@ A backend Ecommerce System built using C#, ASP.NET Core, and SQL Server, followi
 ├── 📁 Shared                   # Shared objects (used across layers)
 │   ├── 📁 DTOs                 # Data Transfer Objects
 │   └── 📁 RequestFeatures      # Filtering, sorting, pagination
-│
-└── .gitignore                  # Make sure to ignore bin/, obj/, etc.
-
 
 ```
 ## 📦 Getting Started
