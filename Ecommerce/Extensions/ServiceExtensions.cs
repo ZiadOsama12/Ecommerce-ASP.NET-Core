@@ -11,10 +11,10 @@ using System.Text;
 using Api.Domain.Repositories;
 using Presistence.Repositories;
 using AspNetCoreRateLimit;
-using FluentValidation;
-using Shared.DTOs;
 using Validation;
 using FluentValidation.AspNetCore;
+using FluentValidation;
+
 
 namespace Ecommerce.Extensions
 {

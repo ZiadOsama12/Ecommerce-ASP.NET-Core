@@ -15,5 +15,6 @@ namespace Api.Services.Contracts
 
         //void UpdateCart(string userId, AddItemDto addItemDto);
         Task<int> ClearCart(string userId);
+      
     }
 }

@@ -22,11 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.Services.Contracts\Api.Services.Contracts.csproj" />
-    <ProjectReference Include="..\Api.Service\Api.Service.csproj" />
-    <ProjectReference Include="..\Presentation\Presentation.csproj" />
-    <ProjectReference Include="..\Presistence\Presistence.csproj" />
-    <ProjectReference Include="..\Validation\Validation.csproj" />
+    <ProjectReference Include="..\Core\Api.Services.Contracts\Api.Services.Contracts.csproj" />
+    <ProjectReference Include="..\Core\Api.Service\Api.Service.csproj" />
+    <ProjectReference Include="..\Core\Validation\Validation.csproj" />
+    <ProjectReference Include="..\Infrastructure\Presentation\Presentation.csproj" />
+    <ProjectReference Include="..\Infrastructure\Presistence\Presistence.csproj" />
   </ItemGroup>
 
 </Project>

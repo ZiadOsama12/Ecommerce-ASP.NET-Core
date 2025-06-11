@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.Services.Contracts\Api.Services.Contracts.csproj" />
-    <ProjectReference Include="..\Validation\Validation.csproj" />
+    <ProjectReference Include="..\..\Core\Api.Services.Contracts\Api.Services.Contracts.csproj" />
+    <ProjectReference Include="..\..\Core\Validation\Validation.csproj" />
   </ItemGroup>
 
 </Project>
